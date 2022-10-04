@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="py-2">Hackathon III Cars</h3>
+      </div>
+    </div>
+    <CarsTable />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import "../node_modules/bootstrap/scss/bootstrap.scss";
+import "../node_modules/@popperjs/core/dist/cjs/popper.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+
+import CarsTable from "./components/CarsTable.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CarsTable,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+h3 {
+  margin-top: 10px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  background-color: rgb(41, 172, 215);
 }
 </style>
