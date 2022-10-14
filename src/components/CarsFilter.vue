@@ -49,7 +49,7 @@
                 placeholder="Year"
                 class="w-100"
                 type="number"
-                v-model="filters.year"
+                v-model="filters.yr"
               />
             </div>
             <span class="">
@@ -73,6 +73,7 @@
                 placeholder="Price"
                 class="w-100"
                 v-model="filters.price"
+                type="number"
               />
             </div>
             <span class="">
@@ -158,7 +159,7 @@ export default {
         color: "",
         engine: "",
         vin: "",
-        year: "",
+        yr: "",
         yearFrom: "",
         yearTo: "",
         price: "",
